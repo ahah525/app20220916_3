@@ -1,5 +1,6 @@
 spring:
   profiles:
-    active: dev
+    # activeProfile 설정 안되어있으면 dev 모드
+    active: ${activeProfile:dev}
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
